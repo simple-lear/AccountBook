@@ -1,0 +1,17 @@
+E:\WPF项目\AccountBook\AccountBook.BLL\bin\Release\net5.0\AccountBook.BLL.deps.json
+E:\WPF项目\AccountBook\AccountBook.BLL\bin\Release\net5.0\AccountBook.BLL.dll
+E:\WPF项目\AccountBook\AccountBook.BLL\bin\Release\net5.0\AccountBook.BLL.pdb
+E:\WPF项目\AccountBook\AccountBook.BLL\bin\Release\net5.0\AccountBook.DAL.dll
+E:\WPF项目\AccountBook\AccountBook.BLL\bin\Release\net5.0\AccountBook.Model.dll
+E:\WPF项目\AccountBook\AccountBook.BLL\bin\Release\net5.0\AccountBook.DAL.pdb
+E:\WPF项目\AccountBook\AccountBook.BLL\bin\Release\net5.0\AccountBook.Model.pdb
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.csproj.AssemblyReference.cache
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.AssemblyInfoInputs.cache
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.AssemblyInfo.cs
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.csproj.CoreCompileInputs.cache
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.csproj.CopyComplete
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.dll
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\refint\AccountBook.BLL.dll
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\AccountBook.BLL.pdb
+E:\WPF项目\AccountBook\AccountBook.BLL\obj\Release\net5.0\ref\AccountBook.BLL.dll

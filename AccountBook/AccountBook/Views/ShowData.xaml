@@ -1,0 +1,142 @@
+﻿<UserControl
+    x:Class="AccountBook.Views.ShowData"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AccountBook.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid Margin="2,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="600" />
+            <RowDefinition Height="200" />
+        </Grid.RowDefinitions>
+        <materialDesign:Card>
+            <TabControl
+                x:Name="tabControl"
+                materialDesign:ColorZoneAssist.Mode="PrimaryMid"
+                materialDesign:NavigationRailAssist.SelectionCornerRadius="50 10 10 10"
+                materialDesign:NavigationRailAssist.ShowSelectionBackground="True"
+                Style="{StaticResource MaterialDesignNavigationRailTabControl}"
+                TabStripPlacement="Top">
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Width="auto" Height="auto">
+                            <materialDesign:PackIcon
+                                Width="24"
+                                Height="24"
+                                HorizontalAlignment="Center"
+                                Kind="ArchiveArrowUp" />
+                            <TextBlock HorizontalAlignment="Center" Text="收入" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel>
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                            <DataGrid
+                                x:Name="showIncomeDataGrid"
+                                CanUserAddRows="False"
+                                ItemsSource="{Binding}"
+                                SelectionMode="Extended"
+                                SelectionUnit="Cell" />
+                        </ScrollViewer>
+                        <StackPanel Orientation="Horizontal">
+                            <Button
+                                x:Name="calcuIncome"
+                                Width="110"
+                                Margin="10"
+                                HorizontalAlignment="Left"
+                                Click="calcuIncome_Click"
+                                Content="计算总收入" />
+                            <Button
+                                x:Name="showIncomeAllBtn"
+                                Width="120"
+                                Margin="10"
+                                HorizontalAlignment="Left"
+                                Click="showIncomeAllBtn_Click"
+                                Content="显示全部收入" />
+                            <ComboBox
+                                x:Name="typeIncomeComboBox"
+                                Width="140"
+                                materialDesign:HintAssist.Hint="根据收入类型显示数据"
+                                SelectionChanged="typeIncomeComboBox_SelectionChanged" />
+                            <Label
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                Content="请输入要删除的Id:" />
+                            <TextBox
+                                x:Name="txtIncomeId"
+                                Width="50"
+                                Height="30"
+                                Margin="0,0,10,0" />
+                            <Button
+                                x:Name="removeIncomeIdBtn"
+                                Click="removeIncomeIdBtn_Click"
+                                Content="删除" />
+                        </StackPanel>
+                    </StackPanel>
+
+                </TabItem>
+                <TabItem x:Name="expendItem">
+                    <TabItem.Header>
+                        <StackPanel Width="auto" Height="auto">
+                            <materialDesign:PackIcon
+                                Width="24"
+                                Height="24"
+                                HorizontalAlignment="Center"
+                                Kind="ArchiveArrowDown" />
+                            <TextBlock HorizontalAlignment="Center" Text="支出" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel>
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                            <DataGrid
+                                x:Name="showExpendDataGrid"
+                                CanUserAddRows="False"
+                                ItemsSource="{Binding}"
+                                SelectionMode="Extended"
+                                SelectionUnit="Cell" />
+                        </ScrollViewer>
+                        <StackPanel Orientation="Horizontal">
+                            <Button
+                                x:Name="calcuExpend"
+                                Width="110"
+                                Margin="10"
+                                HorizontalAlignment="Left"
+                                Click="calcuExpend_Click"
+                                Content="计算总支出" />
+                            <Button
+                                x:Name="showExpendAllBtn"
+                                Width="120"
+                                Margin="10"
+                                HorizontalAlignment="Left"
+                                Click="showExpendAllBtn_Click"
+                                Content="显示全部支出" />
+                            <ComboBox
+                                x:Name="typeExpendComboBox"
+                                Width="140"
+                                materialDesign:HintAssist.Hint="根据支出类型显示数据"
+                                SelectionChanged="typeExpendComboBox_SelectionChanged" />
+
+                            <Label
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                Content="请输入要删除的Id:" />
+                            <TextBox
+                                x:Name="txtExpendId"
+                                Width="50"
+                                Height="30"
+                                Margin="0,0,10,0" />
+                            <Button
+                                x:Name="removeExpendIdBtn"
+                                Click="removeExpendIdBtn_Click"
+                                Content="删除" />
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

@@ -1,0 +1,15 @@
+E:\WPF项目\AccountBook\AccountBook.DAL\bin\Debug\net5.0\AccountBook.DAL.deps.json
+E:\WPF项目\AccountBook\AccountBook.DAL\bin\Debug\net5.0\AccountBook.DAL.dll
+E:\WPF项目\AccountBook\AccountBook.DAL\bin\Debug\net5.0\AccountBook.DAL.pdb
+E:\WPF项目\AccountBook\AccountBook.DAL\bin\Debug\net5.0\AccountBook.Model.dll
+E:\WPF项目\AccountBook\AccountBook.DAL\bin\Debug\net5.0\AccountBook.Model.pdb
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.csproj.AssemblyReference.cache
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.AssemblyInfoInputs.cache
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.AssemblyInfo.cs
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.csproj.CoreCompileInputs.cache
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.csproj.CopyComplete
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.dll
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\refint\AccountBook.DAL.dll
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\AccountBook.DAL.pdb
+E:\WPF项目\AccountBook\AccountBook.DAL\obj\Debug\net5.0\ref\AccountBook.DAL.dll

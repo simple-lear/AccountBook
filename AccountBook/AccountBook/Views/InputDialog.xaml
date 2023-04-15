@@ -1,0 +1,59 @@
+﻿<Window
+    x:Class="AccountBook.Views.InputDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AccountBook.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="记账"
+    Width="400"
+    Height="200"
+    mc:Ignorable="d"
+    WindowStartupLocation="CenterScreen">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <Label Width="80" Content="收入/支出" />
+            <ComboBox x:Name="inExComBox">
+                <ComboBoxItem x:Name="inComeComboBox" Selected="inComeComboBox_Selected">收入</ComboBoxItem>
+                <ComboBoxItem x:Name="expendComboBox" Selected="expendComboBox_Selected">支出</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="80" Content="选择时间" />
+            <DatePicker
+                Name="LocaleDatePicker"
+                Width="120"
+                materialDesign:HintAssist.Hint="选择日期"
+                SelectedDateChanged="LocaleDatePicker_SelectedDateChanged" />
+            <materialDesign:TimePicker
+                x:Name="WithSecondsTimePicker"
+                Width="100"
+                Margin="2,0,0,0"
+                materialDesign:HintAssist.Hint="选择时间"
+                Is24Hours="{Binding IsChecked, ElementName=Is24HourCheckbox}"
+                SelectedTimeChanged="WithSecondsTimePicker_SelectedTimeChanged"
+                WithSeconds="True" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="80" Content="描述" />
+            <TextBox x:Name="descriptionTxt" Width="200" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="80" Content="类型" />
+            <ComboBox x:Name="typeCombobox" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="80" Content="金额" />
+            <TextBox x:Name="moneyTextBox" Width="200" />
+        </StackPanel>
+        <Grid>
+            <Button
+                x:Name="insertBtn"
+                Margin="10"
+                HorizontalAlignment="Center"
+                Click="insertBtn_Click"
+                Content="添加" />
+        </Grid>
+    </StackPanel>
+</Window>

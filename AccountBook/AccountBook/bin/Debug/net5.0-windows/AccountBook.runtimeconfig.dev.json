@@ -1,0 +1,10 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\L2698\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\L2698\\.nuget\\packages",
+      "D:\\objects\\Visual Studio 2022\\Shared\\NuGetPackages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}
